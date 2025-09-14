@@ -1,5 +1,4 @@
 :root {
-    /* Colors */
     --color-background: #F9FAFB;
     --color-surface: #FFFFFF;
     --color-primary: #1E293B;
@@ -10,11 +9,9 @@
     --color-text-light: #64748B;
     --color-border: #E2E8F0;
     
-    /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
-    
-    /* Spacing */
+
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
@@ -23,12 +20,10 @@
     --spacing-2xl: 4rem;
     --spacing-3xl: 6rem;
     
-    /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -71,7 +66,6 @@ p {
     margin-bottom: var(--spacing-sm);
 }
 
-/* Section Titles */
 .section__title {
     text-align: center;
     margin-bottom: var(--spacing-2xl);
@@ -89,7 +83,6 @@ p {
     transform: translateX(-50%);
 }
 
-/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -424,7 +417,6 @@ p {
     }
 }
 
-/* Projects Section */
 .projects {
     padding: var(--spacing-3xl) 0;
 }
@@ -519,7 +511,6 @@ p {
     color: var(--color-accent);
 }
 
-/* Achievements */
 .achievements {
     padding: var(--spacing-3xl) 0;
     background: var(--color-surface);
@@ -587,8 +578,8 @@ p {
 .achievement__result,
 .achievement__date {
   margin: 0.2rem 0;
-  color: #e1dbdb;
-  background: #b0b0ca;
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--color-secondary) !important;
   padding: 0.2rem 0.5rem;
   border-radius: 6px;
   display: inline-block;
@@ -601,7 +592,6 @@ p {
   line-height: 1.4;
 }
 
-/* Contact Section */
 .contact {
     padding: var(--spacing-3xl) 0;
 }
@@ -668,7 +658,6 @@ p {
     transform: translateY(-2px);
 }
 
-/* Form */
 .contact__form {
     background: var(--color-surface);
     padding: var(--spacing-xl);
@@ -705,7 +694,6 @@ p {
     box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
 }
 
-/* Footer */
 .footer {
     background: var(--color-primary);
     color: white;
